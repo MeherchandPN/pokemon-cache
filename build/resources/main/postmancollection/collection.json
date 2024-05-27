@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "8e212faa-265f-453d-8091-86f0da499699",
+    "name": "Pokemon Cache",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "23488436"
+  },
+  "item": [
+    {
+      "name": "Get Pokemon by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/pokemon/a4664bd4-3eaa-4eee-ae48-09ace2d4d3e6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon",
+            "a4664bd4-3eaa-4eee-ae48-09ace2d4d3e6"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Pokemon by Name",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/pokemon?name=pikachu",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "pikachu"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Pokemon",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"pikachu\",\n    \"type\": \"ELECTRIC\",\n    \"height\": 10,\n    \"weight\": 10,\n    \"abilities\": [\n        {\n            \"name\": \"thunder bolt\"\n        },\n        {\n            \"name\": \"thunder tackle\"\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/pokemon",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Pokemon by ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/pokemon/a4664bd4-3eaa-4eee-ae48-09ace2d4d3e6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "pokemon",
+            "a4664bd4-3eaa-4eee-ae48-09ace2d4d3e6"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "id",
+      "value": "test"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.weave.assignment.backendtakehomehvnuif.service.cache.PokemonCacheTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-21T12:55:30" hostname="Mehers-MacBook-Pro-2.local" time="0.0">
+  <properties/>
+  <testcase name="test_methodName_scenario_expectedResult()" classname="com.weave.assignment.backendtakehomehvnuif.service.cache.PokemonCacheTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
